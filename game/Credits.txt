@@ -1,0 +1,45 @@
+- Virtually all modelling, texturing, unit def creation and animation for the NKG is done by Sanada.
+
+- Credit for work on refining elements of the game (gadgets, and widgets) along with creating maps, and a general liason with the Spring Community goes to Oksnoop2.  Various balance changes were also done by him.
+
+- Thanks to Flozi and Forboding Angel for helping to get alternating fire figured out for the units.
+
+- Thanks to Knorke for developing and getting the new metal economy going.  The mining and falling meteors are his work.
+
+- Thanks to zwzsg for writing the Spread'n'Morph gadget that allowed the AI to morph units.  Huge step in making Conflict Terra AI friendly!
+
+- Thanks to Smoth for his work in figuring out how the engine deals with pathfinding, and the consequent code he made to check movedefs.
+
+- Sounds in the sound folder /argh done by Argh.  Most were leveled by Nightcold.
+
+- Big thanks to KDR_11k for the suggestion on how to make the temporary cameras work, and CarRepairer for providing example code.
+
+- Thanks to CarRepairer to getting Sprint working!
+
+- Thanks to Google_Frog for suggesting the unit_estall_disable.lua gadget from ZK.
+
+- Thanks to Forboding Angel and rattle from the boards for helping us figure out how to make our own CEGs!
+
+- Huge thanks to Knorke who revealed the simple way to animate flying units!  Flying Mech and Heavy Flying Mech look awesome now!
+
+- More thanks to Knorke for his moving tank tread script, it is great!  A tutorial on how to do it can be found here:
+
+http://answers.springlobby.info/questions/503/howto-animated-tank-tracks-with-actually-moving-track-elements
+
+- Yet another thank you to Knorke for helping in getting the bprimarycruiserbase to have two build pads.  Flozi was also the one to suggest how to have separate animations for each build pad group.  Woo hoo!
+
+- Although he did not write the gadget specifically for us (it is, as of now, 3 years old!), a huge thanks to zwzsg for writing the Multi_Tech gadget which enables locking and unlocking of units.  This helped move CT forward with a better unit tree!
+
+- Credit goes to Forboding Angel for his research on how to optimize pathfinding.  His findings were implemented (mostly) to the units :)
+
+- Thanks Flozi for suggesting to look in Spring 1944's morph gadget to get customized button names for morph!
+
+- The music track Desert by Yoni Luria was created by Yoni Luria.  He makes great stuff, check out his modDB profile to listen to some of his other tracks:
+
+http://www.moddb.com/members/yoniluria
+
+- Yanom has spent considerable hours working on his AI, YMSAI, for the Drones.  He has done a great job!
+
+- Many others in the days before this was documented.
+
+*Other contributions will hopefully be remembered/added as time progresses.*
