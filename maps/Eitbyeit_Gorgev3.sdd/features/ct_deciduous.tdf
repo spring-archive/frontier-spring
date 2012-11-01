@@ -1,0 +1,18 @@
+[ct_deciduous]
+	{
+	world=All Worlds;
+	description=Maple Tree;
+	object=ct_deciduous.s3o;
+	footprintx=4;
+	footprintz=4;
+	height=66;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=100; 
+	mass=10;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

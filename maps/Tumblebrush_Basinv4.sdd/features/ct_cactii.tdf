@@ -1,0 +1,39 @@
+[ct_cactus1]
+	{
+	world=All Worlds;
+	description=Cactus;
+
+	object=ct_cactus.s3o;
+	footprintx=2;
+	footprintz=2;
+	height=60;
+	blocking=1;
+	hitdensity=1000;
+	energy=0;
+	damage=10; 
+	mass=10;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}
+
+[ct_fatcactus1]
+	{
+	world=All Worlds;
+	description=Cactus;
+
+	object=ct_fatcactus.s3o;
+	footprintx=2;
+	footprintz=2;
+	height=20;
+	blocking=0;
+	hitdensity=1000;
+	energy=0;
+	damage=10; 
+	mass=10;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

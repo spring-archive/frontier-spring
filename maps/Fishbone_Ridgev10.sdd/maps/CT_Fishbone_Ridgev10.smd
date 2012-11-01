@@ -1,0 +1,101 @@
+[MAP]
+{
+	Description=CT_Fishbone_Ridgev10 by the Conflict Terra Development Team;
+	TidalStrength=20;
+	Gravity=120;
+	MaxMetal=1.0;
+	ExtractorRadius=100;
+	MapHardness=200;
+	AutoShowMetal=1;
+	Detailtex=flat.bmp;
+	voidwater=0;
+	[ATMOSPHERE]
+	{
+		FogColor=0.75 0.25 0;
+		CloudColor=1 0.89 0.7;
+		SkyColor=0.76 0.83 1;
+		SunColor=1 0.99 0.81;
+		FogStart=.9;
+		CloudDensity=0.3;
+		MinWind=1;
+		MaxWind=13;
+		skybox=CT_Fishbone_Vista.dds;
+	}
+	
+	[LIGHT]
+	{
+		SunDir=0.008 0.556 -0.444;
+		GroundAmbiantColor=1 1 1;
+		GroundSunColor=1 1 1;
+		UnitAmbiantColor=1 0.93 0.67;
+		UnitSunColor=1 0.93 0.67;
+		SpecularSunColor=1 1 1;		
+	}
+
+
+	
+	[TEAM0]
+	{
+		StartPosX=2834;
+		StartPosZ=937;
+	}
+	[TEAM1]
+	{
+		StartPosX=7409;
+		StartPosZ=993;
+	}
+	[TEAM2]
+	{
+		StartPosX=2800;
+		StartPosZ=4103;
+	}
+	[TEAM3]
+	{
+		StartPosX=7406;
+		StartPosZ=4056;
+	}
+	[TEAM4]
+	{
+		StartPosX=201;
+		StartPosZ=333;
+	}
+	[TEAM5]
+	{
+		StartPosX=384;
+		StartPosZ=2614;
+	}
+	[TEAM6]
+	{
+		StartPosX=222;
+		StartPosZ=4833;
+	}
+	[TEAM7]
+	{
+		StartPosX=5130;
+		StartPosZ=4867;
+	}
+	[TEAM8]
+	{
+		StartPosX=5165;
+		StartPosZ=2443;
+	}[TEAM9]
+	{
+		StartPosX=5201;
+		StartPosZ=92;
+	}
+	[TEAM10]
+	{
+		StartPosX=9881;
+		StartPosZ=463;
+	}	
+	[TEAM11]
+	{
+		StartPosX=9630;
+		StartPosZ=2576;
+	}	
+	[TEAM12]
+	{
+		StartPosX=10081;
+		StartPosZ=4920;
+	}
+}

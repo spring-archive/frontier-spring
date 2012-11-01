@@ -1,0 +1,96 @@
+[MAP]
+{
+	Description=CT_Pathwinderv3 by the Conflict Terra Development Team;
+	TidalStrength=18;
+	Gravity=100;						//in units/sec^2
+	MaxMetal=0.6;						//how much metal a map square with the maximum metal value gives
+	ExtractorRadius=90;				//radius that a single extractor(mine) extracts from
+	MapHardness=175;
+	Detailtex=flat.bmp;
+	voidwater=0;
+
+	[ATMOSPHERE]
+	{
+		FogColor=0.2 0.1 0.6;
+		FogStart=0.9;
+
+		CloudColor=0.85 0.7 0.7;
+		SkyColor=0.1 0.2 0.8;
+
+		SunColor=1 0.8 0.4;
+		CloudDensity=0.3;
+
+		MinWind=2;
+		MaxWind=20;
+		Skybox=CT_PathWinder.dds;
+	}
+	[LIGHT]
+	{
+		SunDir=2 2 0;						//direction of sun (spring will normalize it later)(y component is upward)
+		
+		GroundAmbientColor=0.2 0.2 0.2;		//ambient (non sun lit) color of ground (and grass trees etc)
+		GroundSunColor=0.7 0.7 0.7;			//color of ground where fully sun lit (added to ambient)
+		GroundShadowDensity=1;			//how far from the non shadowed to the ambient color stuff in shadow will go
+
+		UnitAmbientColor=0.3 0.3 0.3;		//ambient (non sun lit) color of units (and wreckage etc)
+		UnitSunColor=0.8 0.8 0.8;			//color of units where fully sun lit (added to ambient)
+		UnitShadowDensity=1;				//how far from the non shadowed to the ambient color stuff in shadow will go
+
+	}
+	[TEAM0]
+	{
+		StartPosX=718;
+		StartPosZ=187;
+	}
+	[TEAM1]
+	{
+		StartPosX=9888;
+		StartPosZ=301;
+	}
+	[TEAM2]
+	{
+		StartPosX=9932;
+		StartPosZ=9889;
+	}
+	[TEAM3]
+	{
+		StartPosX=396;
+		StartPosZ=7510;
+	}
+	
+	[TEAM4]
+	{
+		StartPosX=4684;
+		StartPosZ=9924;
+	}
+	[TEAM5]
+	{
+		StartPosX=9797;
+		StartPosZ=6332;
+	}
+	[TEAM6]
+	{
+		StartPosX=9857;
+		StartPosZ=3492;
+	}
+	[TEAM7]
+	{
+		StartPosX=7338;
+		StartPosZ=364;
+	}
+	[TEAM8]
+	{
+		StartPosX=3137;
+		StartPosZ=242;
+	}
+	[TEAM9]
+	{
+		StartPosX=324;
+		StartPosZ=3481;
+	}
+	[TEAM10]
+	{
+		StartPosX=6546;
+		StartPosZ=9740;
+	}
+}

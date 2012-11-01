@@ -1,0 +1,18 @@
+[ct_tumbleweed01]
+	{
+	world=All Worlds;
+	description=Tumbleweed;
+
+	object=ct_tumbleweed01.s3o;
+	footprintx=2;
+	footprintz=2;
+	height=20;
+	blocking=0;
+	hitdensity=1000;
+	metal=0;
+	damage=10; 
+	mass=10;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

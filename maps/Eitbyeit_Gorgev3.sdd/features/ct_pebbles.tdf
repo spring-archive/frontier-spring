@@ -1,0 +1,18 @@
+[ct_pebbles01]
+	{
+	world=All Worlds;
+	description=Rocks;
+	category=arm_corpses;
+	object=ct_pebbles01.s3o;
+	footprintx=2;
+	footprintz=2;
+	height=12;
+	blocking=0;
+	hitdensity=1000;
+	metal=0;
+	damage=10; 
+	mass=2000;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

@@ -1,0 +1,17 @@
+-- local cfg = {
+--	splatDistrTex 		= 	"splatdistribution.tga",
+--	splatDetailTex 		= 	"splattex.tga",
+--	specularTex 		= 	"specularmap.bmp",
+--	skyReflectModTex 	=	"",
+--	SplatTexScales		=	{ 0.006, 0.08, 0.006, 0.006 },
+--	SplatTexMults		=	{ 0.3, 0.3, 0.2, 0.5 },
+--	}
+-- local SGetMapOptions
+--	if Spring.GetMapOptions then 
+--		SGetMapOptions	=	Spring.GetMapOptions() 	
+--
+--		if (SGetMapOptions.inv == "1" or SGetMapOptions.day == "0")	then
+--			cfg.specularTex 	= 	"specularmap_inv.bmp"
+--		end
+--	end
+-- return cfg

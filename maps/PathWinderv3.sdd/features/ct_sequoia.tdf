@@ -1,0 +1,18 @@
+[ct_sequoia]
+	{
+	world=All Worlds;
+	description=Giant Sequoia;
+	object=ct_sequoia.s3o;
+	footprintx=6;
+	footprintz=6;
+	height=330;
+	blocking=1;
+	hitdensity=1000;
+	metal=0;
+	damage=1000; 
+	mass=1000;
+        upright=true;
+	reclaimable=0;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

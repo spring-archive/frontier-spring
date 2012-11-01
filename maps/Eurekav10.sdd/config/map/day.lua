@@ -1,0 +1,83 @@
+local daycfg = {
+	--------------------------------------------------------------------------------------------------------
+	--			Day settongs
+	--------------------------------------------------------------------------------------------------------
+	weather = {
+		clear = {
+			skybox 							= "",
+			detailTex						= "detailtexbright.bmp",
+			cloudcolor						= { 0, 0, 0 },
+			suncolor						= { 1, 0.8, 0.5 },
+			sundir							= { 0, 0.7, -1 },			
+			clouddensity					= 0.3,
+			skycolor						= { 0.0, 0.0, 0.1 },
+			fogcolor						= { 0.4, 0.4, 0.6 },
+			fogstart						= 0.8,
+			groundambientcolor				= { 0.45, 0.4, 0.3 },
+			grounddiffusecolor				= { 1.0, 1.0, 1.0 },
+			groundshadowdensity				= 0.7,
+			unitambientcolor				= { 0.45, 0.4, 0.3 },
+			unitdiffusecolor				= { 1.0, 0.9, 0.8 },
+			unitshadowdensity				= 0.7,
+			specularsuncolor				= { 0.9, 0.7, 0.6 },
+		},
+			
+		snow = {
+			detailTex						= "realdet.bmp",
+			skybox 							= "",
+			cloudcolor						= { 0.5, 0.5, 0.6 },
+			suncolor						= { 1, 1, 1 },
+			sundir							= { 0, 0.7, -1 },		
+			clouddensity					= 0.8,
+			skycolor						= { 0.0, 0.0, 0.1 },
+			fogcolor						= { 0.65, 0.65, 0.7 },
+			fogstart						= 0.2,
+			groundambientcolor				= { 0.25, 0.25, 0.3 },
+			grounddiffusecolor				= { 0.7, 0.7, 1.0 },
+			groundshadowdensity				= 0.7,
+			unitambientcolor				= { 0.1, 0.2, 0.3 },
+			unitdiffusecolor				= { 0.7, 0.8, 1.0 },
+			unitshadowdensity				= 0.7,
+			specularsuncolor				= { 0.6, 0.7, 0.9 },
+		},
+			
+	},
+		
+	fog = {
+		color			= {0.8,0.85,0.95},
+		height			= 600,
+		layers			= 0,
+		layerspacing	= 50,
+		mapsized		= 0.0,
+		fogmaxstrength	= 0.1,
+		foglowheight	= 200,
+		fogatten 		= 0.0008,		
+	},
+	
+	water =	{
+		shorewaves				= true,
+		forcerendering			= false,
+		absorb					= { 0.01, 0.02, 0.03 },
+		ambientfactor			= 0,
+		basecolor				= { 0, 0.05, 0.1 },
+		blurbase				= 2,
+		blurexponent			= 1,
+		diffusecolor			= { 0.06, 0.09, 0.12, },
+		diffusefactor			= 3.7,
+		fresnelmin				= 0,
+		fresnelmax				= 0,
+		fresnelpower			= 0,
+		mincolor				= { 0.0, 0.0, 0.2 },
+		perlinStartFreq			= 3.50,
+		perlinLacunarity		= 5.69,
+		perlinAmplitude			= 1.11,
+		planecolor				= { 0.02, 0.025, 0.03 },
+		reflectiondistortion	= 0.15,
+		specularcolor			= { 0.8, 0.7, 0.9 },
+		specularfactor			= 0,
+		specularpower			= 20,
+		surfacecolor			= { 0.1, 0.3, 0.4 },
+		surfacealpha			= 0.2,
+	},
+}
+return daycfg

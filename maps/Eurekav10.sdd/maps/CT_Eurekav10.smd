@@ -1,0 +1,81 @@
+[MAP]
+{
+	Description=CT_Eurekav10 by the Conflict Terra Development Team;
+	TidalStrength=18;
+	Gravity=100;						//in units/sec^2
+	MaxMetal=0.6;						//how much metal a map square with the maximum metal value gives
+	ExtractorRadius=90;				//radius that a single extractor(mine) extracts from
+	MapHardness=175;
+	Detailtex=flat.bmp;
+	voidwater=0;
+	
+	[ATMOSPHERE]
+	{
+		FogColor=0.6 0.6 0.6;
+		FogStart=0.9;
+
+		CloudColor=0.85 0.7 0.7;
+		SkyColor=0.1 0.2 0.8;
+
+		SunColor=1 0.8 0.4;
+		CloudDensity=0.3;
+
+		MinWind=2;
+		MaxWind=20;
+		Skybox=CT_Eureka_Vista.dds;
+	}
+	[LIGHT]
+	{
+		SunDir=2 2 0;						//direction of sun (spring will normalize it later)(y component is upward)
+		
+		GroundAmbientColor=0.2 0.2 0.2;		//ambient (non sun lit) color of ground (and grass trees etc)
+		GroundSunColor=0.7 0.7 0.7;			//color of ground where fully sun lit (added to ambient)
+		GroundShadowDensity=1;			//how far from the non shadowed to the ambient color stuff in shadow will go
+
+		UnitAmbientColor=0.3 0.3 0.3;		//ambient (non sun lit) color of units (and wreckage etc)
+		UnitSunColor=0.8 0.8 0.8;			//color of units where fully sun lit (added to ambient)
+		UnitShadowDensity=1;				//how far from the non shadowed to the ambient color stuff in shadow will go
+
+	}
+	[TEAM0]
+	{
+		StartPosX=703;
+		StartPosZ=470;
+	}
+	[TEAM1]
+	{
+		StartPosX=7656;
+		StartPosZ=473;
+	}
+	[TEAM2]
+	{
+		StartPosX=726;
+		StartPosZ=7619;
+	}
+	[TEAM3]
+	{
+		StartPosX=7511;
+		StartPosZ=7542;
+	}
+	
+	[TEAM4]
+	{
+		StartPosX=3863;
+		StartPosZ=535;
+	}
+	[TEAM5]
+	{
+		StartPosX=876;
+		StartPosZ=3977;
+	}
+	[TEAM6]
+	{
+		StartPosX=7520;
+		StartPosZ=4159;
+	}
+	[TEAM7]
+	{
+		StartPosX=4279;
+		StartPosZ=7446;
+	}
+}

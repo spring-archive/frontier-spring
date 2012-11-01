@@ -1,0 +1,53 @@
+[MAP]
+{
+	Description=CT_Threewayv3 by the Conflict Terra Development Team;
+	TidalStrength=20;
+	Gravity=120;
+	MaxMetal=1.0;
+	ExtractorRadius=100;
+	MapHardness=200;
+	AutoShowMetal=1;
+	Detailtex=flat.bmp;
+	voidwater=0;
+	[ATMOSPHERE]
+	{
+		FogColor=0.75 0.5 0;
+		CloudColor=1 0.89 0.7;
+		SkyColor=0.76 0.83 1;
+		SunColor=1 0.99 0.81;
+		FogStart=.9;
+		CloudDensity=0.3;
+		MinWind=1;
+		MaxWind=13;
+		skybox=CT_Threeway.dds;
+	}
+	
+	[LIGHT]
+	{
+		SunDir=0.008 0.556 -0.444;
+		GroundAmbiantColor=1 1 1;
+		GroundSunColor=1 1 1;
+		UnitAmbiantColor=1 0.93 0.67;
+		UnitSunColor=1 0.93 0.67;
+		SpecularSunColor=1 1 1;		
+	}
+
+
+	
+	[TEAM0]
+	{
+		StartPosX=1596;
+		StartPosZ=2123;
+	}
+	[TEAM1]
+	{
+		StartPosX=5563;
+		StartPosZ=2082;
+	}
+	[TEAM2]
+	{
+		StartPosX=3930;
+		StartPosZ=5562;
+	}
+
+}

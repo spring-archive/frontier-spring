@@ -1,0 +1,49 @@
+//
+[MAP]
+{
+	Description=CT_Eitbyeit_Gorgev3 by the Conflict Terra Development Team;
+
+	
+	TidalStrength=16;
+	Gravity=100;
+	MaxMetal=.8;
+	ExtractorRadius=125;
+	MapHardness=800;
+	Detailtex=flat.bmp;
+	voidwater=0;
+	[ATMOSPHERE]
+	{
+		FogColor=0.7 0.83 0.94;
+		FogStart=0.4;
+		CloudColor=0.67 0.71 0.75;
+		SkyColor=0.22 0.44 0.68;
+		SunColor=1 0.95 0.75;
+		CloudDensity=0.16;
+		MinWind=5;
+		MaxWind=20;
+		Skybox=CT_Eitbyeit.dds;
+	}
+	[LIGHT]
+	{
+		SunDir=-0.1 0.35 -0.594;
+		GroundAmbiantColor=1.20 1.20 1.20;
+		GroundSunColor=1 1 0.95;
+		GroundShadowDensity=0.8;
+		UnitAmbiantColor=0.7 0.7 0.7;
+		UnitSunColor=1 1 1;
+		UnitShadowDensity=0.8;
+		SpecularSunColor=1 1 1;
+	}
+	[TEAM0]
+	{
+		StartPosX=3587;
+		StartPosZ=537;
+	}
+	[TEAM1]
+	{
+		StartPosX=534;
+		StartPosZ=3594;
+	}
+	
+	
+}
