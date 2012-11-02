@@ -1,6 +1,6 @@
 local carrierDefs = {
-        {hostUnitDefID = UnitDefNames.lbigwalker.id, droneUnitDefID=UnitDefNames.lwarrior.id, reloadTime=10, maxDrones = 4,  managed=true, hostUnitID = nil, drones = {  }, reload = nil},
-        {hostUnitDefID = UnitDefNames.lbigwalker.id, droneUnitDefID=UnitDefNames.laadrone.id, reloadTime=10, maxDrones = 4,  managed=true, hostUnitID = nil, drones = {  }, reload = nil},
+        --{hostUnitDefID = UnitDefNames.lbigwalker.id, droneUnitDefID=UnitDefNames.lwarrior.id, reloadTime=10, maxDrones = 4,  managed=true, hostUnitID = nil, drones = {  }, reload = nil},
+        --{hostUnitDefID = UnitDefNames.lbigwalker.id, droneUnitDefID=UnitDefNames.laadrone.id, reloadTime=10, maxDrones = 4,  managed=true, hostUnitID = nil, drones = {  }, reload = nil},
         {hostUnitDefID = UnitDefNames.lengineer.id, droneUnitDefID=UnitDefNames.kdroneminerflyer.id, reloadTime = 10, maxDrones = 6,  managed=false, hostUnitID = nil, drones = {  }, reload = nil},
 }
 
