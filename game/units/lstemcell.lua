@@ -1,6 +1,6 @@
-local kairdrone = {
-	name                = [[Air Drone]],
-	description         = [[Blows itself up to destroy large aircraft such as Cruisers. Can cloak and doesn't appear on radar.]],
+local lstemcell = {
+	name                = [[Locust Nanomorph]],
+	description         = [[The basic unit of Locust self-replication. Can morph into many other Locust units]],
     acceleration        = 0.06,
     brakerate           = 1.5,
     buildpic            = [[kairdrone.png]],
@@ -9,15 +9,15 @@ local kairdrone = {
     buildDistance       = 150,
     builder             = false,
 	buildTime           = 15,
-    canAssist           = true,
-	CanAttack 			= 1,
+    canAssist           = false,
+	CanAttack 			= 0,
 	CanCapture			= 0,
-    canGuard            = true,
-	canMove		  	    = true,
-	canPatrol           = true,
-    canReclaim          = true,
+    canGuard            = false,
+	canMove		  	    = false,
+	canPatrol           = false,
+    canReclaim          = false,
 	canStop             = true,
-	category            = [[GUNSHIP]],
+	category            = [[LAND]],
     canFly              = true,
 	collide             = true,
 	corpse              = [[DEAD]],
@@ -30,7 +30,7 @@ local kairdrone = {
 	reclaimable         = false,
 	stealth             = true,
     energyMake          = 1,
-	explodeAs           = [[DRONE_PETARD]],
+	explodeAs           = [[DRONE_GROUND_UNIT]],
     footprintx          = 2,
 	footprintZ          = 2,
 	hoverAttack         = true,
@@ -47,9 +47,9 @@ local kairdrone = {
 	objectName          = "kairdrone.s3o",
     onoffable           = false,
     seismicSignature    = 4,
-    selfDestructAs      = [[DRONE_PETARD]],
+    selfDestructAs      = [[DRONE_GROUND_UNIT]],
     side                = [[Drone]],
-    sightDistance       = 500,
+    sightDistance       = 350,
 	sounds			= {
 	      select = {
 		"golgotha/vehicle_done_44khz",
@@ -60,34 +60,16 @@ local kairdrone = {
 	  },
 	  
 	smoothAnim          = true,
-    terraformSpeed      = 300,
-	reclaimSpeed        = 300,
 	turnInPlace         = 1,
-	turnRate            = 800,
+	turnRate            = 00,
 	showNanospray	    = 1,
 	Resurrectspeed      = 100,
 	workerTime          = 1,
-	script              = "kairdrone.lua",
+	script              = "lstemcell.lua",
 
 	featureDefs         = {
 	
-	    DEAD  = {
-	      description      = [[Wreckage - Air Drone]],
-	      blocking         = true,
-	      category         = [[corpses]],
-	      damage           = 250,
-	      energy           = 0,
-	      featureDead      = [[DEAD2]],
-	      footprintX       = 2,
-	      footprintZ       = 2,
-	      metal            = 50,
-	      object           = [[wrecks/kairdronewreck.s3o]],
-	      reclaimable      = true,
-	      reclaimTime      = 1500,
-	    },
-	
-	
-	    DEAD2 = {
+	    DEAD = {
 	      description      = [[Debris - Air Drone]],
 	      blocking         = false,
 	      category         = [[heaps]],
@@ -106,4 +88,4 @@ local kairdrone = {
 	}
 
 
-return lowerkeys({ ["kairdrone"] = kairdrone })
+return lowerkeys({ ["lstemcell"] = lstemcell })
