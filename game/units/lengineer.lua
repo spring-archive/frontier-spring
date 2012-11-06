@@ -1,6 +1,6 @@
 local lengineer = {
     name                = [[Drone Builder]],
-    description         = [[Unarmed construction unit. Can Transform into a Drone Mining Tower to accumulate metal. Can Burrow.]],
+    description         = [[Unarmed construction unit. Hosts a swarm of mining drones, so move it close to resources. Produces energy from an onboard reactor.]],
     acceleration        = 1,
     brakerate           = 0.1,
     buildpic            = [[lengineer.png]],
@@ -9,8 +9,7 @@ local lengineer = {
     buildDistance       = 300,
     builder             = true,
     buildoptions        = {
-        [[lbigwalker]],
-        [[kdroneroller]],
+        [[lstemcell]],
     },
 
     buildTime           = 15,
@@ -41,7 +40,7 @@ local lengineer = {
     cloakTimeout        = 0,
     init_Cloaked        = false,    
     
-    energyMake          = 1,
+    energyMake          = 20,
     explodeAs           = [[DRONE_GROUND_UNIT]],
     footprintx          = 3,
     footprintZ          = 3,

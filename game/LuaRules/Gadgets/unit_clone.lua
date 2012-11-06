@@ -226,8 +226,8 @@ local function StartClone(unitID, cloneDef)
     def = cloneDef,
     progress = 0.0,
     increment = cloneDef.increment,
-	offsetx = unitradius * (1.5 + math.random()), --math.random() is between 0 and 1
-	offsetz = unitradius * (-0.5 + math.random()),
+	offsetx = unitradius * (-6 + math.random()*12), --math.random() is between 0 and 1
+	offsetz = unitradius * (-6 + math.random()*12),
    }
 end
 

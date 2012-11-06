@@ -1,8 +1,16 @@
 	local cloneDefs = {
 
 		--DRONE--
+		lstemcell = {
+			into = 'lstemcell',
+			tech=0,
+			time=15,
+			metal=200,
+			energy=200,
+		},
 
-		lengineer = {
+
+		--[[lengineer = {
 			into = 'lengineer',
 			tech = 0,
 			time = 15,
@@ -63,7 +71,7 @@
 			time = 15,
 			metal = 400,
 			energy = 400,
-		},  
+		},  ]]--
 	}
 
 	return cloneDefs

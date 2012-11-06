@@ -98,7 +98,7 @@
                 Ship = 0,
                 Sub = 0,
 
-                Meteor = 12,
+                Meteor = 4,
                 Drone = 0,
                 Spare1 = 0,
                 Spare2 = 0,
