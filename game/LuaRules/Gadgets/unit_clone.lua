@@ -283,7 +283,7 @@ local function FinishClone(unitID, cloneData)
     newXp = math.min( newXp, nextClone.xp*0.9)
   end
   Spring.SetUnitExperience(newUnit, Spring.GetUnitExperience(unitID)*XpScale)
-  Spring.SetUnitHealth(newUnit, Spring.GetUnitHealth(unitID))
+  Spring.SetUnitHealth(newUnit, --[[Spring.GetUnitHealth(unitID)]] udDst.health )
 
   --copy command queue
   local cmds = Spring.GetUnitCommands(unitID)

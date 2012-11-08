@@ -1,8 +1,8 @@
 	local cloneDefs = {
 
 		--DRONE--
-		lstemcell = {
-			into = 'lstemcell',
+		lengineer = {
+			into = 'lwarrior',
 			tech=0,
 			time=15,
 			metal=200,

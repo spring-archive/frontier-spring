@@ -16,7 +16,7 @@
 -------------------------------------------------------------------------------- 
 local morphDefs = {
  
-  bprimarycruiser = {
+  --[[bprimarycruiser = {
     {
       into = 'bprimarycruiserbase',
       metal = 0,
@@ -132,7 +132,7 @@ local morphDefs = {
       text = 'Mobilize into the Azai Class Cruiser',
       name = 'Mobilize',      
     },
-  },
+  },]]
   
   lstemcell = {
 	{
