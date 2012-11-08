@@ -4,10 +4,26 @@
 		lengineer = {
 			into = 'lwarrior',
 			tech=0,
-			time=15,
+			time=20,
+			metal=UnitDefNames["lwarrior"].metalCost, 
+			energy=UnitDefNames["lwarrior"].energyCost, 
+		},
+		--[[
+		lengineer = {
+			into = 'laadrone',
+			tech=0,
+			time=20,
 			metal=200,
 			energy=200,
 		},
+		
+		lengineer = {
+			into = 'lengineer',
+			tech=0,
+			time=20,
+			metal=200,
+			energy=200,
+		},]]--
 
 
 		--[[lengineer = {
@@ -73,5 +89,7 @@
 			energy = 400,
 		},  ]]--
 	}
+
+--Spring.Echo("metalcostis" .. UnitDefNames["lwarrior"].metalCost) --debug
 
 	return cloneDefs
