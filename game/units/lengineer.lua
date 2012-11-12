@@ -9,7 +9,7 @@ local lengineer = {
     buildDistance       = 300,
     builder             = true,
     buildoptions        = {
-        [[lstemcell]],
+        
     },
 
     buildTime           = 15,

@@ -2,12 +2,13 @@
 
 		--DRONE--
 		lengineer = {
-			into = 'lwarrior',
+			into = 'lstemcell',
 			tech=0,
 			time=20,
-			metal=UnitDefNames["lwarrior"].metalCost, 
-			energy=UnitDefNames["lwarrior"].energyCost, 
+			metal=UnitDefNames["lstemcell"].metalCost, 
+			energy=UnitDefNames["lstemcell"].energyCost, 
 		},
+		
 		--[[
 		lengineer = {
 			into = 'laadrone',
