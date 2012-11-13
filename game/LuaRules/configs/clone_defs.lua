@@ -1,13 +1,5 @@
 	local cloneDefs = {
 
-		--DRONE--
-		lengineer = {
-			into = 'lstemcell',
-			tech=0,
-			time=20,
-			metal=UnitDefNames["lstemcell"].metalCost, 
-			energy=UnitDefNames["lstemcell"].energyCost, 
-		},
 		
 		--[[
 		lengineer = {
