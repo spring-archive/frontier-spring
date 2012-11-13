@@ -242,7 +242,7 @@ function canUnitBuildThis (parentName, childName)
 
     if (parentName == "lengineer" and childName == "kgrounddronestructure") then return true end
 
-    if (parentName == "lengineer" and childName == "kdronebigminingtower") then return true end
+    if (parentName == "lengineer" and childName == "lobelisk") then return true end
 
     if (parentName == "lengineer" and childName == "kairdronestructure") then return true end
     
@@ -398,7 +398,7 @@ function buildUnit (unitID, jobname)
 
             local ux,uy,uz = Spring.GetUnitPosition (unitID)
             
-            if(jobname=="kdronebigminingtower") then
+            if(jobname=="lobelisk") then
                 local x,y,z = getMiningTowerSpot (ux,uy,uz, unitID) --builder goes in. to find nearest res.
             else
                 local x,y,z = getBuildSpot (ux,uy,uz, jobname, 200, 50) --something other than big mining tower
@@ -1014,7 +1014,7 @@ function getBuildSpot (ux, uy, uz, buildingname, r, rgrow)
 
     --Spring.MarkerAddPoint (ux,uy,uz, "trying to find a spot here")
     
-    --if(buildingname=="kdronebigminingtower") then ux,uy,uz,dist = nearestResFromUnit( end
+    --if(buildingname=="lobelisk") then ux,uy,uz,dist = nearestResFromUnit( end
 
     local blocked = 0
 
@@ -1087,7 +1087,7 @@ function getMiningTowerSpot (ux, uy, uz, builder, r, rgrow)  --NOT YET IMPLEMENT
 
         y = Spring.GetGroundHeight (x,z)
 
-        blocked =Spring.TestBuildOrder (UnitDefNames["kdronebigminingtower"].id, x,y,z,0)
+        blocked =Spring.TestBuildOrder (UnitDefNames["lobelisk"].id, x,y,z,0)
 
         r = r +rgrow
 

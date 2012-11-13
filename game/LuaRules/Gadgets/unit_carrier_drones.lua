@@ -217,7 +217,7 @@ function gadget:UnitFinished(unitID, unitDefID, unitTeam)
     --Spring.Echo("unit finished!")
     for i,v in pairs(carrierDefs) do
         if(v.hostUnitDefID == unitDefID) then --found a match
-            table.insert(carrierList,{hostUnitDefID = v.hostUnitDefID, droneUnitDefID=v.droneUnitDefID, reloadTime=v.reloadTime, maxDrones = v.maxDrones, managed=v.managed, hostUnitID = unitID, drones = {  }, lastReloadFrame = 0})
+            table.insert(carrierList,{hostUnitDefID = v.hostUnitDefID, droneUnitDefID=v.droneUnitDefID, reloadTime=v.reloadTime, maxDrones = v.maxDrones, managed=v.managed, hostUnitID = unitID, drones = {  }, lastReloadFrame = 0, selectMode = v.selectMode})
             --lastReloadFrame is, well, the last game frame it was reloaded
         end
     end
@@ -295,7 +295,7 @@ function makeNewDrone(carrierTable) --simply creates the drone.
     local zS = (z + (math.cos(angle) * 20))
     local thisDrone = CreateUnit(carrierTable.droneUnitDefID,x,y,z,1,Spring.GetUnitTeam(carrierTable.hostUnitID))
     SetUnitPosition(thisDrone, xS, zS, true)
-    SetUnitNoSelect(thisDrone,true)
+    if(carrierTable.selectMode == 0) then SetUnitNoSelect(thisDrone,true) end
     table.insert(carrierTable.drones,thisDrone)
 end
 

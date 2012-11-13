@@ -133,6 +133,26 @@ local morphDefs = {
       name = 'Mobilize',      
     },
   },]]
+  lobelisk = {
+	{
+      into = 'lengineer',
+      metal = 0,
+      energy = 0,
+      time = 5,
+      text = 'Transform into the Locust Engineer',
+      name = 'Transform',     
+    },
+	{
+      into = 'lwarrior',
+      metal = 0,
+      energy = 0,
+      time = 5,
+      text = 'Transform into the Locust Warrior',
+      name = 'Transform',     
+    },
+  
+  },
+  
   
   lstemcell = {
 	{
