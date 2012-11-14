@@ -291,8 +291,8 @@ function makeNewDrone(carrierTable) --simply creates the drone.
     --DOES NOT TOUCH RELOAD, MAXDRONES, OR OTHER PROPERTIES OF CARRIERTABLE. edit those elsewhere or add them here.
     local x, y, z = GetUnitPosition(carrierTable.hostUnitID)
     local angle = math.rad(random(1,360))
-    local xS = (x + (math.sin(angle) * 100))
-    local zS = (z + (math.cos(angle) * 100))
+    local xS = (x + (math.sin(angle) * 20))
+    local zS = (z + (math.cos(angle) * 20))
     local thisDrone = CreateUnit(carrierTable.droneUnitDefID,x,y,z,1,Spring.GetUnitTeam(carrierTable.hostUnitID))
     SetUnitPosition(thisDrone, xS, zS, true)
     if(carrierTable.selectMode == 0) then SetUnitNoSelect(thisDrone,true) end
