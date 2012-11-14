@@ -1,7 +1,7 @@
     unitDef = {
       unitname            = [[kdroneminerflyer]],
       name                = [[Aerial Miner Drone]],
-      description         = [[Miner Drone, autoproduced by Locust Walkers]],
+      description         = [[Miner Drone, autoproduced by Locust Engineer]],
       amphibious          = false,
       buildCostEnergy     = 20,
       buildCostMetal      = 20,
@@ -24,8 +24,13 @@
       reclaimable         = false,
       
       customParams = {
+		  is_shaper=true,
+		  shapesSmallRockTo="lstemcell",
+		  shapesBigRockTo="lstemcell",
+          
+          
           is_miner=true,   --used by minig: if the unit can mine is_mineable=1 ressources
-          --max_cargo=25,    --used by mining: how much metal the unit can carry at once before having to return to a drop off 
+          --max_cargo=25,    --used by mining: how much metal the unit can carry at once before having to return to a drop off --currently not in use
         },
     
       explodeAs           = [[SMALL_UNIT]],
@@ -98,7 +103,7 @@
                 Ship = 0,
                 Sub = 0,
 
-                Meteor = 4,
+                Meteor = 40,
                 Drone = 0,
                 Spare1 = 0,
                 Spare2 = 0,
