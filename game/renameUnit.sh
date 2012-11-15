@@ -1,6 +1,6 @@
-
 #!/bin/bash
-#find . -name "*.lua" | perl -pi.bak -e "s/$1/$2/"
+
+#Hello World!
 for file in `find . -name "*.lua"`
 do
 	sed -i "s/$1/$2/g" $file
