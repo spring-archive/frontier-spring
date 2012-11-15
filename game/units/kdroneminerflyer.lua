@@ -25,8 +25,10 @@
       
       customParams = {
 		  is_shaper=true,
-		  shapesSmallRockTo="lstemcell",
-		  shapesBigRockTo="lstemcell",
+		  --shapedefs={ bminerals="lstemcell", bminerals_big="lstemcell"},
+		  
+		  shapessmallrockto="lstemcell",
+		  shapesbigrockto="lstemcell",
           
           
           is_miner=true,   --used by minig: if the unit can mine is_mineable=1 ressources
@@ -103,7 +105,7 @@
                 Ship = 0,
                 Sub = 0,
 
-                Meteor = 40,
+                Meteor = 100,
                 Drone = 0,
                 Spare1 = 0,
                 Spare2 = 0,
