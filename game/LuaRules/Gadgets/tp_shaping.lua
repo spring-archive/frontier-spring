@@ -62,20 +62,22 @@ function gadget:UnitDestroyed(unitID, unitDefID, teamID, attackerID)
 	--if(unitDefID == UnitDefNames.bminerals.id) then
 	--Spring.Echo("unit destroyed!")
 	--Spring.Echo("It was destroyed by team " .. Spring.GetUnitTeam(attackerID) )
-	local cp = UnitDefs[Spring.GetUnitDefID(attackerID)].customParams
-    if (cp) then
-		--Spring.Echo(table.tostring(cp))
-        if (cp.is_shaper) then
-            --Spring.Echo("It was destroyed by a shaper!")
-            if(unitDefID == UnitDefNames.bminerals.id) then 
-				local x,y,z = Spring.GetUnitPosition(unitID)
-				Spring.CreateUnit(UnitDefNames[cp.shapessmallrockto].id,x,y,z,1,Spring.GetUnitTeam(attackerID))
+	if(attackerID ~= nil) then
+		local cp = UnitDefs[Spring.GetUnitDefID(attackerID)].customParams
+		if (cp) then
+			--Spring.Echo(table.tostring(cp))
+			if (cp.is_shaper) then
+				--Spring.Echo("It was destroyed by a shaper!")
+				if(unitDefID == UnitDefNames.bminerals.id or unitDefID==UnitDefNames.bmeteorimpact.id) then 
+					local x,y,z = Spring.GetUnitPosition(unitID)
+					Spring.CreateUnit(UnitDefNames[cp.shapessmallrockto].id,x,y,z,1,Spring.GetUnitTeam(attackerID))
+				end
+				if(unitDefID == UnitDefNames.bmeteorimpact_big.id) then
+					local x,y,z = Spring.GetUnitPosition(unitID)
+					Spring.CreateUnit(UnitDefNames[cp.shapesbigrockto].id,x,y,z,1,Spring.GetUnitTeam(attackerID))
+				end
 			end
-			--if(unitDefID == UnitDefNames.bminerals_big.id) then
-			--	local x,y,z = Spring.GetUnitPosition(unitID)
-			--	Spring.CreateUnit(UnitDefNames[cp.shapesbigrockto].id,x,y,z,1,Spring.GetUnitTeam(attackerID))
-			--end
-        end
+		end
     end
 end
 
