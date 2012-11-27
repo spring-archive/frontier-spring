@@ -31,7 +31,7 @@
 		  shapesbigrockto="lstemcell",
           
           
-          is_miner=true,   --used by minig: if the unit can mine is_mineable=1 ressources
+          --is_miner=true,   --used by minig: if the unit can mine is_mineable=1 ressources
           --max_cargo=25,    --used by mining: how much metal the unit can carry at once before having to return to a drop off --currently not in use
         },
     
@@ -45,6 +45,7 @@
       maxAcc              = 1,
       maxDamage           = 10,
       maxVelocity         = 1.5,
+      moveState           = 2,
       noAutoFire          = false,
       noChaseCategory     = [[LAND SINK HOVER SHIP FLOAT FIXEDWING GUNSHIP CRUISER SUB]],
       objectName          = [[kdroneminerflyer.s3o]],

@@ -13,7 +13,7 @@ end
 if (gadgetHandler:IsSyncedCode()) then
 
 
-
+local resource_name = {}
 
 function table.val_to_str ( v )
   if "string" == type( v ) then
@@ -51,7 +51,64 @@ function table.tostring( tbl )
   return "{" .. table.concat( result, "," ) .. "}"
 end
 
+function gadget:Initialize()
+    make_resource_name_table ()
+end
 
+function search_res (unitID)
+    local x, y, z = Spring.GetUnitPosition(unitID)
+    --Spring.GiveOrderToUnit(unitID, CMD.FIRE_STATE , { 2 }, {})
+    --Spring.GiveOrderToUnit(unitID, CMD.AREA_ATTACK  , { x, y, z,50000  }, {})
+    --miners[unitID].last_mined_id = nil
+    --miners[unitID].status = "send to search"
+    local res = nearest_resID_from_miner (unitID)
+    if (res) then Spring.GiveOrderToUnit(unitID, CMD.ATTACK  , { res }, {}) end
+    --miners[unitID].status = "search finished"
+end
+
+function make_resource_name_table ()
+    for id,unitDef in pairs(UnitDefs) do
+        local cp = UnitDefs[id].customParams
+        if (cp) then
+            if (cp.is_mineable) then
+                local resname = unitDef.name
+                table.insert (resource_name, resname)
+            end
+        end
+    end
+end
+
+function is_resource_type (unitDefID)
+    if (unitDefID == nil) then return false end
+    local unitDef = UnitDefs[unitDefID]
+    if (unitDef == nil) then return false end
+    for schluessel, wert in pairs(resource_name) do                            
+        if (wert == unitDef.name) then return true end
+    end 
+    --if (unitDef.name == resource_name) then return true end
+    return false
+end
+
+
+function nearest_resID_from_miner (minerID)
+    local nearest_resID = nil
+    local nearest_res_distance = 9999999999
+    local nearest_unmined_res = nil
+    local nearest_unmined_res_distance = 9999999999
+    local x,y,z = Spring.GetUnitPosition(minerID)
+    res=Spring.GetUnitsInCylinder (x,z, 5000, Spring.GetGaiaTeamID())
+    if (res == nil) then return nil end --no near units at all :/
+    for i in pairs (res) do
+        if (is_resource_type (Spring.GetUnitDefID(res[i])) == true) then            
+            local d = Spring.GetUnitSeparation (minerID, res[i])
+            if (d < nearest_res_distance) then
+                nearest_res_distance = d
+                nearest_resID = res[i]
+            end
+        end      
+    end
+    if (nearest_resID~=nil) then return nearest_resID else return nil end
+end
 
 
 function gadget:GameFrame(frameNum) 
@@ -79,6 +136,15 @@ function gadget:UnitDestroyed(unitID, unitDefID, teamID, attackerID)
 			end
 		end
     end
+end
+
+function gadget:UnitIdle(unitID, unitDefID, teamID)
+	local cp = UnitDefs[unitDefID]
+	if(cp) then
+		if(cp.is_shaper) then
+			search_res (unitID)
+		end
+	end
 end
 
 --------------------------------------------------------
