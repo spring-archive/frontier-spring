@@ -96,7 +96,7 @@ function nearest_resID_from_miner (minerID)
     local nearest_unmined_res = nil
     local nearest_unmined_res_distance = 9999999999
     local x,y,z = Spring.GetUnitPosition(minerID)
-    res=Spring.GetUnitsInCylinder (x,z, 5000, Spring.GetGaiaTeamID())
+    res=Spring.GetUnitsInCylinder (x,z, 10000, Spring.GetGaiaTeamID())
     if (res == nil) then return nil end --no near units at all :/
     for i in pairs (res) do
         if (is_resource_type (Spring.GetUnitDefID(res[i])) == true) then            
