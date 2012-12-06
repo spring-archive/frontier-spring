@@ -160,6 +160,14 @@ local morphDefs = {
       text = 'Transform into the Locust AA Cannon',
       name = 'Transform',     
     },
+    {
+	  into = 'kdroneroller',
+      metal = 0,
+      energy = 0,
+      time = 5,
+      text = 'Transform into the Locust Seige Gun',
+      name = 'Transform',     
+    },
   
   },
 
