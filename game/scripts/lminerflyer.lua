@@ -26,15 +26,15 @@
     function script.Create()
     end
     
-    function script.QueryWeapon1() return base end
+    function script.QueryWeapon1() return flare1 end
     
     function script.AimFromWeapon1() return base end
     
     function script.AimWeapon1( heading, pitch )
         Signal(SIG_AIM)
         SetSignalMask(SIG_AIM)
-        Turn(base, y_axis, heading--[[+math.rad(90)]], math.rad(90))
-        Turn(base, x_axis, -pitch, math.rad(90))
+        Turn(base, y_axis, heading+math.rad(180), math.rad(90))
+        Turn(base, x_axis, -pitch, 0--[[math.rad(90)]])
         WaitForTurn(base, y_axis)
         WaitForTurn(base, x_axis)
         StartThread(RestoreAfterDelay)
