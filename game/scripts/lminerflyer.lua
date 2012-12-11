@@ -2,8 +2,8 @@
 
     --pieces
     local base = piece "base"
-    local flare1 = piece "flare1"
-    local fxflare1 = piece "fxflare1"
+    local flare1 = piece "flare"
+    --local fxflare1 = piece "fxflare1"
     
     
     --signals
@@ -33,7 +33,7 @@
     function script.AimWeapon1( heading, pitch )
         Signal(SIG_AIM)
         SetSignalMask(SIG_AIM)
-        Turn(base, y_axis, heading+math.rad(90), math.rad(90))
+        Turn(base, y_axis, heading--[[+math.rad(90)]], math.rad(90))
         Turn(base, x_axis, -pitch, math.rad(90))
         WaitForTurn(base, y_axis)
         WaitForTurn(base, x_axis)

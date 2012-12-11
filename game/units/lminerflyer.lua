@@ -1,12 +1,12 @@
     unitDef = {
-      unitname            = [[kdroneminerflyer]],
-      name                = [[Aerial Miner Drone]],
-      description         = [[Miner Drone, autoproduced by Locust Engineer]],
+      unitname            = [[lminerflyer]],
+      name                = [[Locust Shaper]],
+      description         = [[Aerial Shaper Unit - Can produce Nanomorphs from minerals]],
       amphibious          = false,
       buildCostEnergy     = 20,
       buildCostMetal      = 20,
       builder             = false,
-      buildPic            = [[kdroneminerflyer.png]],
+      buildPic            = [[lminerflyer.png]],
       buildTime           = 10,
       canAttack           = true,
       canDropFlare        = false,
@@ -48,7 +48,7 @@
       moveState           = 2,
       noAutoFire          = false,
       noChaseCategory     = [[LAND SINK HOVER SHIP FLOAT FIXEDWING GUNSHIP CRUISER SUB]],
-      objectName          = [[kdroneminerflyer.s3o]],
+      objectName          = [[lminerflyer.s3o]],
       radarDistance       = 750,
       seismicSignature    = 0,
       selfDestructAs      = [[SMALL_UNIT]],
@@ -75,7 +75,7 @@
       turnRadius          = 200,
       --unitRestricted      = 20,
       useSmoothMesh       = false,
-      script              = [[kdroneminerflyer.lua]],
+      script              = [[lminerflyer.lua]],
 
           weapons             = {
         
@@ -117,7 +117,7 @@
               interceptedByShieldType = 1,
               impulseFactor           = 0,
               lineOfSight             = true,
-              range                   = 115,
+              range                   = 215,
               reloadtime              = 0.1,
               rgbColor                = [[.4 1 0.4]],
               separation              = 2,
@@ -158,4 +158,4 @@
     
     }
     
-    return lowerkeys({ kdroneminerflyer = unitDef })
+    return lowerkeys({ lminerflyer = unitDef })
