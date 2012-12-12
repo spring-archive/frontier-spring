@@ -31,15 +31,15 @@
     function script.AimFromWeapon1() return base end
     
     function script.AimWeapon1( heading, pitch )
-        Signal(SIG_AIM)
-        SetSignalMask(SIG_AIM)
-        Turn(base, y_axis, heading+math.rad(180), math.rad(90))
-        Turn(base, x_axis, -pitch, 0--[[math.rad(90)]])
-        WaitForTurn(base, y_axis)
-        WaitForTurn(base, x_axis)
-        StartThread(RestoreAfterDelay)
-        return true
-    end
+		Signal(SIG_AIM)
+		SetSignalMask(SIG_AIM)
+        Turn(base, y_axis, heading, math.rad(1500))
+		Turn(base, x_axis, -pitch, math.rad(1500))
+		WaitForTurn(base, y_axis)
+		WaitForTurn(base, x_axis)
+		StartThread(RestoreAfterDelay)
+	return true
+	end
     
     function script.FireWeapon1()
         --EmitSfx(flare1, ct_mininglaser_green) 
