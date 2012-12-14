@@ -133,6 +133,24 @@ local morphDefs = {
       name = 'Mobilize',      
     },
   },]]
+  lobelisk = {
+	{
+		into = 'lminerflyer',
+		metal = 0,
+		energy = 0,
+		time = 30,
+		text = 'Transform into a Locust Shaper',
+		name = 'Transform',
+	},
+	{
+		into = 'lbigwalker',
+		metal = 0,
+		energy = 0,
+		time = 30,
+		text = 'Transform into a Locust Walker',
+		name = 'Transform',
+	},
+  },
   
   
   lstemcell = {
@@ -172,7 +190,6 @@ local morphDefs = {
   },
 
 --[[
-
   lengineer = {
     {
       into = 'kdroneminingtower',

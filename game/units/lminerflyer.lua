@@ -28,7 +28,7 @@
 		  --shapedefs={ bminerals="lstemcell", bminerals_big="lstemcell"},
 		  
 		  shapessmallrockto="lstemcell",
-		  shapesbigrockto="lstemcell",
+		  shapesbigrockto="lobelisk",
           
           
           --is_miner=true,   --used by minig: if the unit can mine is_mineable=1 ressources
