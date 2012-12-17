@@ -154,14 +154,14 @@ local morphDefs = {
   
   
   lstemcell = {
-	{
+	--[[{
       into = 'lengineer',
       metal = 0,
       energy = 0,
       time = 5,
       text = 'Transform into the Locust Engineer',
       name = 'Transform',     
-    },
+    },]]
 	{
       into = 'lwarrior',
       metal = 0,
