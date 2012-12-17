@@ -7,7 +7,7 @@ local
   },
   [2] = {
     name      = 'Locusts',
-   startunit = 'lengineer',
+   startunit = 'lminerflyer',
   },
 }
 return sideData
