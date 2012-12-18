@@ -193,7 +193,14 @@ local morphDefs = {
 	  time = 10,
 	  text = 'Transform into the Locust Tri Air Drone',
 	  name = 'Transform',
-	},  
+	},
+	{
+	  into = 'kdiairdrone',
+	  metal = 0,
+	  energy = 0,
+	  time = 10,
+	  text = 'Transform into the Locust Air Superiority Fighter',
+	  name = 'Transform',
   },
 
 --[[
