@@ -24,7 +24,7 @@
 	  leaveTracks         = true,
 	  mass                = 90,
 	  maxDamage           = 1200,
-      maxSlope            = 18,
+      maxSlope            = 32,
 	  maxVelocity         = 2,
       maxWaterDepth       = 22,
 	  movementClass       = [[TANK3x3]],
