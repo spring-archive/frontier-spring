@@ -1,13 +1,12 @@
 -- Defines the playable factions.
-local
- sideData = {
+local sideData = {
   [1] = {
     name      = 'Masons',
     startunit = 'mnanoforge',
   },
   [2] = {
     name      = 'Locusts',
-   startunit = 'lminerflyer',
+    startunit = 'lminerflyer',
   },
 }
 return sideData

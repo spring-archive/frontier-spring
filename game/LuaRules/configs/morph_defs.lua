@@ -201,6 +201,7 @@ local morphDefs = {
 	  time = 10,
 	  text = 'Transform into the Locust Air Superiority Fighter',
 	  name = 'Transform',
+	 },
   },
 
 --[[
