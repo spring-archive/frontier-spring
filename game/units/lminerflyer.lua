@@ -43,7 +43,7 @@
       idleAutoHeal        = 0,
       mass                = 15,
       maxAcc              = 1,
-      maxDamage           = 100,
+      maxDamage           = 1000,
       maxVelocity         = 1.5,
       moveState           = 2,
       noAutoFire          = false,

@@ -85,7 +85,7 @@ local laadrone = {
 	
 	      damage                  = {
 		--Anti-Plane
-		default = 10,
+		default = 22,
 		Cruiser = 10,
 		Building = 2,
 		Land = 2,
