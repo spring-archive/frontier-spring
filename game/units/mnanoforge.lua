@@ -1,7 +1,7 @@
 unitDef = {
 
   unitname                      = [[mnanoforge]],
-  name                          = [[PN Mech Factory]],
+  name                          = [[Mason Factory]],
   description                   = [[Mechamakemechs]],
   amphibious                    = false,
   acceleration                  = 0,
@@ -12,11 +12,12 @@ unitDef = {
 
   buildoptions                  = {
 
-    [[pnminer]],
-    [[pnaamech]],
-    [[pnjumpjetmech]],
-    [[pnlightmech]],
-    [[pnvlaunchmech]],
+    [[bminer]],
+    [[mtank]],
+    -- [[pnaamech]],
+    -- [[pnjumpjetmech]],
+    -- [[pnlightmech]],
+    -- [[pnvlaunchmech]],
   },
 
 
@@ -33,9 +34,10 @@ unitDef = {
 --  collisionVolumeTest           = 1,
 --  collisionVolumeType           = [[box]],
   corpse                        = [[DEAD]],
+  customParams = { is_dropoff=true,   },
   reclaimable                   = false,
 
-  energyMake                    = 0,
+  energyMake                    = 10,
   energyUse                     = 0,
   explodeAs                     = [[LARGE_BUILDING]],
   footprintX                    = 16,
