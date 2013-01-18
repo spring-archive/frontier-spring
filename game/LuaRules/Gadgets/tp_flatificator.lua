@@ -19,7 +19,7 @@ end
 function gadget:UnitFinished(unitID, unitDefID, teamID)
 	if(unitName(unitID)=="mnanoforge") then --test
 		local unitx,unity,unitz = Spring.GetUnitPosition(unitID)
-        Spring.LevelHeightMap(unitz,unitx,1000,1000,unity)
+        Spring.LevelHeightMap(unitz,unitx,unitz+1000,unity+1000,unity)
 	end
 end
 
