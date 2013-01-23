@@ -49,7 +49,7 @@
 	  },
 
 	  side                = [[NKG]],
-	  sightDistance       = 700,
+	  sightDistance       = 4000,
 	  smoothAnim          = true,
           speedToFront        = 0,
           script              = [[pnfightermkii.lua]],
