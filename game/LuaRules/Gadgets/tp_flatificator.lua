@@ -21,7 +21,8 @@ function gadget:UnitFinished(unitID, unitDefID, teamID)
 		local unitx,unity,unitz = Spring.GetUnitPosition(unitID)
 		unitx = math.floor((unitx+4)/8)*8
 		unitz = math.floor((unitz+4)/8)*8
-        Spring.LevelHeightMap(unitx,unitz,unitx+1000,unitz+1000,unity)
+		Spring.LevelHeightMap(unitx-1000,unitz-1000,unitx+1000,unitz+1000,unity)
+        Spring.LevelSmoothMesh(unitx-1500,unitz-1500,unitx+1500,unitz+1500,unity/2)
 	end
 end
 
