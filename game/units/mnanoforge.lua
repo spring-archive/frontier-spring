@@ -57,7 +57,7 @@ unitDef = {
   selfDestructAs                = [[LARGE_BUILDING]],
   showNanoSpray                 = false,
   side                          = [[NKG]],
-  sightDistance                 = 250,
+  sightDistance                 = 4000,
 
 	  sounds			= {
 	      select = {
