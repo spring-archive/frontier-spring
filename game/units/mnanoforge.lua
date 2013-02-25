@@ -20,6 +20,11 @@ unitDef = {
     -- [[pnvlaunchmech]],
   },
 
+  useBuildingGroundDecal        = true,
+  buildingGroundDecalType       = "grounddecals/kdronegroundstructuregrounddecal.png",
+  buildingGroundDecalSizeX      = 100,
+  buildingGroundDecalSizeY      = 100,
+  buildingGroundDecalDecaySpeed = 0.1,
 
 
   buildPic                      = [[mnanoforge.png]],
