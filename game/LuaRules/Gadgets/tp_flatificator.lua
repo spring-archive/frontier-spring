@@ -92,7 +92,7 @@ function unitName (unitID)
 
 end
 
-
+--[[
 function funkymap()	
 	Spring.SetHeightMapFunc(function() --Lua: function inside a function, because f*** you.
 		for z=0,Game.mapSizeZ, Game.squareSize do
@@ -103,7 +103,7 @@ function funkymap()
 			end
 		end
 	end)
-end
+end]]
 
 function gadget:Initialize()
 	--Spring.LevelHeightMap(0,0,1000,1000,100)
@@ -119,7 +119,7 @@ function gadget:UnitFinished(unitID, unitDefID, teamID)
 		local unitx,unity,unitz = Spring.GetUnitPosition(unitID)
 		unitx = math.floor((unitx+4)/8)*8
 		unitz = math.floor((unitz+4)/8)*8
-		Spring.LevelHeightMap(unitx-1000,unitz-1000,unitx+1000,unitz+1000,unity)
         Spring.LevelSmoothMesh(unitx-1500,unitz-1500,unitx+1500,unitz+1500,unity/2)
+        Spring.LevelHeightMap(unitx-1000,unitz-1000,unitx+1000,unitz+1000,unity)
 	end
 end
