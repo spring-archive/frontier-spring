@@ -105,21 +105,26 @@ function funkymap()
 	end)
 end]]
 
-function gadget:Initialize()
-	--Spring.LevelHeightMap(0,0,1000,1000,100)
-	--Spring.Echo("flatificator testing...")
+function euclidianDistance ( x1, y1, x2, y2 )
+  local dx = x1 - x2
+  local dy = y1 - y2
+  return math.sqrt ( dx * dx + dy * dy )
 end
-
---function gadget:GameStart()
-	--funkymap()
---end
 
 function gadget:UnitFinished(unitID, unitDefID, teamID)
 	if(unitName(unitID)=="mnanoforge") then --test
 		local unitx,unity,unitz = Spring.GetUnitPosition(unitID)
 		unitx = math.floor((unitx+4)/8)*8
 		unitz = math.floor((unitz+4)/8)*8
-        Spring.LevelSmoothMesh(unitx-1500,unitz-1500,unitx+1500,unitz+1500,unity/2)
-        Spring.LevelHeightMap(unitx-1000,unitz-1000,unitx+1000,unitz+1000,unity)
+		
+		Spring.SetHeightMapFunc(function()
+			for z=0,Game.mapSizeZ, Game.squareSize do
+				for x=0,Game.mapSizeX, Game.squareSize do
+					Spring.SetHeightMap( x, z, 200 + 20 * math.cos((x + z) / 90) )
+				end
+			end
+		end)
+
+        --Spring.LevelHeightMap(unitx-1000,unitz-1000,unitx+1000,unitz+1000,unity)
 	end
 end
