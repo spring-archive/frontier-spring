@@ -120,7 +120,14 @@ function gadget:UnitFinished(unitID, unitDefID, teamID)
 		Spring.SetHeightMapFunc(function()
 			for z=0,Game.mapSizeZ, Game.squareSize do
 				for x=0,Game.mapSizeX, Game.squareSize do
-					Spring.SetHeightMap( x, z, 200 + 20 * math.cos((x + z) / 90) )
+					Spring.Echo("Analyzing square")
+					distance = euclidianDistance(unitx,unitz,x,z)
+					Spring.Echo("This square is "..distance.." meters from the nanoforge")
+					differential = Spring.GetGroundHeight(unitx,unitz)-Spring.GetGroundHeight(x,z)
+					Spring.Echo("This square is "..differential.." meters lower than the nanoforge")
+					
+					addedAltitude = differential/(1+2.71828^(-1*distance))
+					--Spring.AddHeightMap( x, z, addedAltitude)
 				end
 			end
 		end)
