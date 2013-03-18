@@ -111,27 +111,28 @@ function euclidianDistance ( x1, y1, x2, y2 )
   return math.sqrt ( dx * dx + dy * dy )
 end
 
+function unitName (unitID)
+	if (not Spring.ValidUnitID (unitID)) then return "!invalid unitID in unitName()!" end
+	local udID =Spring.GetUnitDefID(unitID)
+	local uDef = UnitDefs [udID]
+	return uDef.name
+end
+
 function gadget:UnitFinished(unitID, unitDefID, teamID)
-	if(unitName(unitID)=="mnanoforge") then --test
+	if(unitName(unitID)=="mnanoforge") then --level one
 		local unitx,unity,unitz = Spring.GetUnitPosition(unitID)
 		unitx = math.floor((unitx+4)/8)*8
 		unitz = math.floor((unitz+4)/8)*8
-		
-		Spring.SetHeightMapFunc(function()
-			for z=0,Game.mapSizeZ, Game.squareSize do
-				for x=0,Game.mapSizeX, Game.squareSize do
-					Spring.Echo("Analyzing square")
-					distance = euclidianDistance(unitx,unitz,x,z)
-					Spring.Echo("This square is "..distance.." meters from the nanoforge")
-					differential = Spring.GetGroundHeight(unitx,unitz)-Spring.GetGroundHeight(x,z)
-					Spring.Echo("This square is "..differential.." meters lower than the nanoforge")
-					
-					addedAltitude = differential/(1+2.71828^(-1*distance))
-					--Spring.AddHeightMap( x, z, addedAltitude)
-				end
+		for index,otherUnitID in pairs(Spring.GetAllUnits()) do
+			if(unitName(otherUnitID) == "mnanoforge") then
+				nx,ny,nz = Spring.GetUnitPosition(otherUnitID)
+				unity = ny
+				Spring.MoveCtrl.Enable(unitID)
+				Spring.MoveCtrl.SetPosition(unitID,unitx,unity,unitz)
+				Spring.MoveCtrl.Disable(unitID)
 			end
-		end)
-
-        --Spring.LevelHeightMap(unitx-1000,unitz-1000,unitx+1000,unitz+1000,unity)
+		end
+		
+        Spring.LevelHeightMap(unitx-1000,unitz-1000,unitx+1000,unitz+1000,unity)
 	end
 end
