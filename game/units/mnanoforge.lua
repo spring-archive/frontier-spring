@@ -63,6 +63,7 @@ unitDef = {
   showNanoSpray                 = false,
   side                          = [[NKG]],
   sightDistance                 = 4000,
+  losEmitHeight					= 1000,
 
 	  sounds			= {
 	      select = {

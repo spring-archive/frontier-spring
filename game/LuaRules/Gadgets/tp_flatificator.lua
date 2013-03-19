@@ -123,7 +123,7 @@ function gadget:UnitFinished(unitID, unitDefID, teamID)
 		local unitx,unity,unitz = Spring.GetUnitPosition(unitID)
 		unitx = math.floor((unitx+4)/8)*8
 		unitz = math.floor((unitz+4)/8)*8
-		for index,otherUnitID in pairs(Spring.GetAllUnits()) do
+		--[[for index,otherUnitID in pairs(Spring.GetAllUnits()) do
 			if(unitName(otherUnitID) == "mnanoforge") then
 				nx,ny,nz = Spring.GetUnitPosition(otherUnitID)
 				unity = ny
@@ -131,7 +131,7 @@ function gadget:UnitFinished(unitID, unitDefID, teamID)
 				Spring.MoveCtrl.SetPosition(unitID,unitx,unity,unitz)
 				Spring.MoveCtrl.Disable(unitID)
 			end
-		end
+		end]]
 		
         Spring.LevelHeightMap(unitx-1000,unitz-1000,unitx+1000,unitz+1000,unity)
 	end
