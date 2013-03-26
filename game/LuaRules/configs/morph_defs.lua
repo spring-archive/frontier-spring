@@ -15,6 +15,15 @@
 
 -------------------------------------------------------------------------------- 
 local morphDefs = {
+	mnanoforge =
+	{
+		into = 'btankcruiserfactory', --replace later
+		metal = 500,
+		energy = 500,
+		time = 30,
+		text = "Upgrade",
+		name = "Upgrade",
+	},
  
   --[[bprimarycruiser = {
     {
@@ -87,6 +96,7 @@ local morphDefs = {
   },
 
 -----
+	]]--
  
   btankcruiser = {
     {
@@ -110,7 +120,7 @@ local morphDefs = {
     },
   },
 
------
+--[[
  
   baircruiser = {
     {

@@ -73,6 +73,17 @@ local auraDefs = {
 		req = UnitDefNames['bgeneraltank'].id,
 		encName= 'Regeneration',
 	},
+	['Swarm Aura'] = {
+		unittypes = {
+			[UnitDefNames['lengineer'].id] = 500,
+		},
+		ally = true,
+		aceg = '',
+		ceg = 'ct_aura_health',
+		req = UnitDefNames['lengineer'].id,
+		encName= 'Regeneration',
+	},
+	
 	--[[
 	['Focus Aura'] = {
 		unittypes = {
@@ -110,6 +121,7 @@ local auraDefs = {
 
 local auraUnits = {
 	['Heal Aura'] = {},
+	['Swarm Aura'] = {}, --locust healing aura
 --	['Focus Aura'] = {},	
 --	['Frenzy Aura'] = {},
 --	['Thorns Aura'] = {},		

@@ -115,6 +115,11 @@ function gadget:GameFrame(f)
 			if spGetUnitRulesParam(unitID,"Heal Aura") == 1 then
 				spSetUnitHealth(unitID, spGetUnitHealth(unitID)+50 ) --10
 			end
+			
+			if spGetUnitRulesParam(unitID,"Swarm Aura") == 1 then
+				spSetUnitHealth(unitID, spGetUnitHealth(unitID)+50 ) --10
+			end
+			
 			--- Focus --
 			if spGetUnitRulesParam(unitID,"Focus Aura") == 1 then
 				for i,w in ipairs(ud.weapons) do
