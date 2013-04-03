@@ -117,7 +117,7 @@ function gadget:GameFrame(f)
 			end
 			
 			if spGetUnitRulesParam(unitID,"Swarm Aura") == 1 then
-				spSetUnitHealth(unitID, spGetUnitHealth(unitID)+50 ) --10
+				spSetUnitHealth(unitID, spGetUnitHealth(unitID)+40 ) --10
 			end
 			
 			--- Focus --
